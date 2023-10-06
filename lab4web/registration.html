@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="registration.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створіть акаунт</title>
+</head>
+<body>
+<header>
+    <img class="logo" src="/temp/logo.jpg" alt="logo">
+</header>
+<h1>Створіть акаунт</h1>
+<form method="post" action=''>
+    <fieldset>
+        <label for="first-name">Ім'я: <input id="first-name" name="first-name" type="text"
+                                             required/></label>
+        <label for="last-name">Прізвище: <input id="last-name" name="last-name" type="text"
+                                                required/></label>
+        <label for="surname">По батькові: <input id="surname" name="surname" type="text"
+                                                 required/></label>
+        <label for="email">E-mail: <input id="email" name="email" type="email" required/></label>
+        <label for="new-password">Створіть пароль (Не менше ніж 8 символів): <input id="new-password"
+                                                                                    name="new-password" type="password"
+                                                                                    pattern="[a-z0-5]{8,}"
+                                                                                    required/></label>
+    </fieldset>
+    <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"/>
+            Особистий акаунт</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline"/>
+            Акаунт компанії</label>
+        <label for="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/> Я
+            приймаю <a href="">умови та положення</a>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label for="profile-picture">Завантажте фото профілю: <input id="profile-picture" type="file"
+                                                                     name="file"/></label>
+        <label for="age">Ваш вік: <input id="age" type="number" name="age" min="18" max="120"/></label>
+        <label for="referrer">Ваша спеціалізація
+            <select id="referrer" name="referrer">
+                <option value="">(виберіть одну)</option>
+                <option value="1">Логістика вантажоперевезень</option>
+                <option value="2">Складська логістика</option>
+                <option value="3">Логістика постачання</option>
+                <option value="4">Інше</option>
+            </select>
+        </label>
+        <label for="bio">Додайте опис профілю:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Коли ж путін вже..."></textarea>
+        </label>
+    </fieldset>
+    <input class="button" type="submit" value="Створити акаунт"/>
+</form>
+</body>
+</html>

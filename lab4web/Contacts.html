@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Contacts </title>
+    <link href="styleForContacts.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/temp/logo.jpg" alt="logo">
+    </header>
+    <div class ="container">
+        <h2 class="title"> Зв'яжіться з нами із легкістю, ми завжди поруч! </h2>
+        <form method="post" action=''>
+        <div class="form-label">
+            <label for="forName"> Ім'я </label>
+            <input type="text" id="forName" name="firstname" placeholder="Your name">
+            <label for="forLastName"> Фамілія </label>
+            <input type="text" id="forLastName" name="lastname" placeholder="Your last name">
+            <label for="forNumber"> Номер телефону </label>
+            <input type="text" id="forNumber" name="number" placeholder="Your phone number">
+            <label for="city"> Місто </label>
+            <select id="city" name="city">
+                <option value="Kyiv"> Київ </option>
+                <option value="Kharkiv"> Харків </option>
+                <option value="Odesa"> Одеса </option>
+                <option value="Dnipro"> Дніпро </option>
+                <option value="Zaporizhzhia"> Запоріжжя </option>
+                <option value="Lviv"> Львів </option>
+            </select>
+            <label for="subject"> Опишіть звернення </label>
+            <textarea id="subject" name="subject"  placeholder="Write something"></textarea>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="contacts">
+            <a href="tel:+380661152532">+380661152532</a>
+            <a href="mailto:TerraTranzLogistics@gmail.com">TerraTranzLogistics@gmail.com</a>
+            <a href="tg://resolve?domain=terraTranzLogistics">Telegram</a>
+            <a href="whatsapp://send?phone=+380661152532">Whatsapp</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14549.002585908578!2d24.04420263669176!3d49.862661040264825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adce45082eb63%3A0x851e2026cfbcc817!2z0JvQvtCz0ZbRgdGC0LjRh9C90LAg0LrQvtC80L_QsNC90ZbRjyAiRGV2aWsi!5e0!3m2!1suk!2sua!4v1696511700699!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+</body>
+</html>
