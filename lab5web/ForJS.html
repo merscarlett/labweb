@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ForJS</title>
+    <link href="../CSS/forJS.css" rel="stylesheet">
+    <script src="../js/trans.js"></script>
+    <script src="../js/calculate.js"></script>
+    <script src="../js/chat.js"></script>
+    <script src="../js/birth.js"></script>
+</head>
+<body>
+<header>
+    <img class="logo" src="/temp/logo.jpg" alt="logo">
+    <nav>
+        <a href="MainPage.html"> Головна </a>
+        <a href="table.html"> Таблиця </a>
+        <a href="login.html"> Авторизація </a>
+        <a href="registration.html"> Реєстрація </a>
+        <a href="Contacts.html"> Контакти </a>
+        <a href="FAQ.html"> FAQ </a>
+    </nav>
+</header>
+<h2 class="title"> Калькулятор прямокутників </h2>
+<div class="calculate">
+    <form method="post" action=''>
+        <label for="length">Довжина:  <input id="length" type="number" oninput="calculate()" required></label>
+        <label for="width">Ширина: <input id="width" type="number" oninput="calculate()" required></label>
+        <p>Периметр: <span id="perimeter"></span></p>
+        <p>Площа: <span id="area"></span></p>
+        <p>Довжина діагоналі: <span id="diagonal"></span></p>
+    </form>
+</div>
+<h2>День тижня по даті народження</h2>
+<div class="birth">
+    <form id="dateForm">
+        <label for="day">День:</label>
+        <input type="number" id="day" name="day" min="1" max="31" required>
+        <label for="month">Місяць:</label>
+        <input type="number" id="month" name="month" min="1" max="12" required>
+        <label for="year">Рік:</label>
+        <input type="number" id="year" name="year" min="1" required>
+        <button type="submit">Обчислити</button>
+    </form>
+    <p id="result">
+        <script src="/js/birth.js"></script>
+    </p>
+</div>
+<div class="trans">
+    <h2>Транслітерація</h2>
+    <label for="inputField"></label><textarea id="inputField" oninput="transliterate()" rows="8" cols="50"></textarea>
+    <br><br>
+    <label for="outputField"></label><textarea id="outputField" rows="8" cols="50"></textarea>
+</div>
+<h2>Чат</h2>
+    <div class="chat-container">
+        <div class="user user1">
+            <label for="user1Input"></label><input type="text" id="user1Input">
+            <button onclick="sendMessage('User 1')"> Send as User 1</button>
+        </div>
+        <div id="chatBox"></div>
+        <div class="user user2">
+            <label for="user2Input"></label><input type="text" id="user2Input">
+            <button onclick="sendMessage('User 2')">Send as User 2</button>
+        </div>
+    </div>
+</body>
+</html>
